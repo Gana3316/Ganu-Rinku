@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Our Memories 📸</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+min-height:100vh;
+
+background:
+radial-gradient(circle at top,#4b001d,#170009 50%,#050005);
+
+color:white;
+
+font-family:Georgia,"Noto Serif Devanagari",serif;
+
+}
+
+nav{
+
+position:fixed;
+
+top:0;
+left:0;
+right:0;
+
+z-index:10;
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+padding:17px 10px;
+
+background:rgba(8,3,8,.88);
+
+backdrop-filter:blur(10px);
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-family:Arial,sans-serif;
+
+font-size:9px;
+
+letter-spacing:1px;
+
+}
+
+.container{
+
+max-width:950px;
+
+margin:auto;
+
+padding:120px 20px 70px;
+
+text-align:center;
+
+}
+
+.small{
+
+font-family:Arial,sans-serif;
+
+font-size:11px;
+
+letter-spacing:4px;
+
+color:#ff91b1;
+
+margin-bottom:15px;
+
+}
+
+h1{
+
+font-size:clamp(38px,9vw,60px);
+
+margin-bottom:20px;
+
+}
+
+.intro{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#eadbe4;
+
+margin-bottom:35px;
+
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:16px;
+
+}
+
+.photo{
+
+height:220px;
+
+border-radius:22px;
+
+border:1px dashed #a84c6b;
+
+background:rgba(255,255,255,.045);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+flex-direction:column;
+
+color:#a98290;
+
+transition:.3s;
+
+}
+
+.photo:hover{
+
+transform:scale(1.02);
+
+border-color:#ff5c8d;
+
+}
+
+.camera{
+
+font-size:35px;
+
+margin-bottom:10px;
+
+}
+
+.photo span{
+
+font-family:Arial,sans-serif;
+
+font-size:11px;
+
+letter-spacing:2px;
+
+}
+
+.note{
+
+margin-top:30px;
+
+font-size:16px;
+
+line-height:1.8;
+
+color:#bda4ae;
+
+}
+
+.next{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:14px 28px;
+
+border-radius:50px;
+
+background:#ff3f78;
+
+color:white;
+
+text-decoration:none;
+
+font-family:Arial,sans-serif;
+
+box-shadow:0 0 25px rgba(255,63,120,.5);
+
+}
+
+@media(max-width:650px){
+
+.gallery{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:12px;
+
+}
+
+.photo{
+
+height:170px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<nav>
+
+<a href="index.html">HOME</a>
+
+<a href="story.html">OUR STORY</a>
+
+<a href="love.html">WHY I LOVE YOU</a>
+
+<a href="memories.html">MEMORIES</a>
+
+<a href="letter.html">LOVE LETTER</a>
+
+</nav>
+
+
+<div class="container">
+
+<div class="small">
+OUR MEMORIES
+</div>
+
+<h1>
+आपल्या आठवणी 📸
+</h1>
+
+<p class="intro">
+
+काही क्षण इतके सुंदर असतात
+की ते फक्त आठवणी राहत नाहीत…
+
+ते आपल्या मनाचा एक छोटासा भाग बनून जातात. ❤️
+
+<br>
+
+आणि आपल्या अशाच सुंदर आठवणी
+इथे कायम जपून ठेवूया.
+
+</p>
+
+
+<div class="gallery">
+
+
+<div class="photo">
+
+<div class="camera">📷</div>
+
+<span>OUR MEMORY 01</span>
+
+</div>
+
+
+<div class="photo">
+
+<div class="camera">📷</div>
+
+<span>OUR MEMORY 02</span>
+
+</div>
+
+
+<div class="photo">
+
+<div class="camera">📷</div>
+
+<span>OUR MEMORY 03</span>
+
+</div>
+
+
+<div class="photo">
+
+<div class="camera">📷</div>
+
+<span>OUR MEMORY 04</span>
+
+</div>
+
+
+<div class="photo">
+
+<div class="camera">📷</div>
+
+<span>OUR MEMORY 05</span>
+
+</div>
+
+
+<div class="photo">
+
+<div class="camera">📷</div>
+
+<span>OUR MEMORY 06</span>
+
+</div>
+
+
+</div>
+
+
+<p class="note">
+
+📸 आपले photos नंतर इथे add करूया. ❤️
+
+</p>
+
+
+<a href="letter.html" class="next">
+
+Love Letter → 💌
+
+</a>
+
+</div>
+
+</body>
+
+</html>
