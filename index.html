@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>A Little Surprise ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+height:100vh;
+
+background:
+radial-gradient(circle at top,#4b001d,#16000b 45%,#050005);
+
+color:white;
+
+font-family:Georgia,serif;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+overflow:hidden;
+}
+
+.container{
+
+padding:30px;
+
+max-width:650px;
+
+position:relative;
+z-index:2;
+
+}
+
+.small{
+
+color:#ff8aaa;
+
+font-family:Arial,sans-serif;
+
+letter-spacing:4px;
+
+font-size:12px;
+
+margin-bottom:28px;
+
+}
+
+h1{
+
+font-size:clamp(38px,10vw,65px);
+
+line-height:1.25;
+
+margin-bottom:25px;
+
+}
+
+p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#f3dce4;
+
+}
+
+.btn{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:15px 30px;
+
+border-radius:50px;
+
+background:#ff3f78;
+
+color:white;
+
+text-decoration:none;
+
+font-family:Arial,sans-serif;
+
+font-size:15px;
+
+box-shadow:0 0 30px rgba(255,63,120,.65);
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.06);
+
+}
+
+.heart{
+
+position:absolute;
+
+bottom:-40px;
+
+color:#ff4d83;
+
+animation:float linear infinite;
+
+opacity:.7;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:.8;
+
+}
+
+100%{
+
+transform:translateY(-110vh) rotate(30deg);
+
+opacity:0;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="small">
+A LITTLE SURPRISE
+</div>
+
+<h1>
+तुझ्यासाठी<br>
+काहीतरी खास आहे… ❤️
+</h1>
+
+<p>
+
+ही फक्त एक website नाही…<br>
+
+तुझ्यासाठी मनापासून तयार केलेली<br>
+
+एक छोटीशी surprise आहे. 💕
+
+</p>
+
+<a
+href="reveal.html"
+class="btn">
+
+✨ Open Your Surprise ✨
+
+</a>
+
+</div>
+
+
+<script>
+
+for(let i=0;i<20;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="♥";
+
+heart.style.left=
+Math.random()*100+"vw";
+
+heart.style.fontSize=
+(12+Math.random()*22)+"px";
+
+heart.style.animationDuration=
+(5+Math.random()*7)+"s";
+
+heart.style.animationDelay=
+(-Math.random()*10)+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+
+</html>
